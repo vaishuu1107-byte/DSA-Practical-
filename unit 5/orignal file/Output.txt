@@ -1,0 +1,86 @@
+
+=============================================
+   HOSPITAL DEPARTMENT GRAPH NAVIGATION
+=============================================
+1. Display Hospital Graph (Departments & Corridors)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route using Dijkstra's Algorithm
+4. Exit
+Choice: 
+--- Hospital Department Corridor Network ---
+[0] Emergency Department   -> Radiology (X-Ray/CT) (30m), ICU (50m)
+[1] Radiology (X-Ray/CT)   -> Emergency Department (30m), ICU (15m), Pathology Lab (25m)
+[2] ICU                    -> Emergency Department (50m), Radiology (X-Ray/CT) (15m), Operation Theatre (20m)
+[3] Operation Theatre      -> ICU (20m), Pathology Lab (35m), Pharmacy (15m)
+[4] Pathology Lab          -> Radiology (X-Ray/CT) (25m), Operation Theatre (35m), Pharmacy (20m)
+[5] Pharmacy               -> Pathology Lab (20m), Operation Theatre (15m)
+
+=============================================
+   HOSPITAL DEPARTMENT GRAPH NAVIGATION
+=============================================
+1. Display Hospital Graph (Departments & Corridors)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route using Dijkstra's Algorithm
+4. Exit
+Choice: 
+--- BFS Traversal from Emergency Department ---
+Reachable Hospital Units in Level Order:
+  1. [0] Emergency Department
+  2. [1] Radiology (X-Ray/CT)
+  3. [2] ICU
+  4. [4] Pathology Lab
+  5. [3] Operation Theatre
+  6. [5] Pharmacy
+
+=============================================
+   HOSPITAL DEPARTMENT GRAPH NAVIGATION
+=============================================
+1. Display Hospital Graph (Departments & Corridors)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route using Dijkstra's Algorithm
+4. Exit
+Choice: 
+Available Hospital Departments:
+  0 : Emergency Department
+  1 : Radiology (X-Ray/CT)
+  2 : ICU
+  3 : Operation Theatre
+  4 : Pathology Lab
+  5 : Pharmacy
+Enter Destination Department ID (0 to 5): 
+--- Dijkstra's Shortest Path Result ---
+Source      : [0] Emergency Department
+Destination : [3] Operation Theatre
+Shortest Route : Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Operation Theatre
+Total Distance : 65 meters
+
+=============================================
+   HOSPITAL DEPARTMENT GRAPH NAVIGATION
+=============================================
+1. Display Hospital Graph (Departments & Corridors)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route using Dijkstra's Algorithm
+4. Exit
+Choice: 
+Available Hospital Departments:
+  0 : Emergency Department
+  1 : Radiology (X-Ray/CT)
+  2 : ICU
+  3 : Operation Theatre
+  4 : Pathology Lab
+  5 : Pharmacy
+Enter Destination Department ID (0 to 5): 
+--- Dijkstra's Shortest Path Result ---
+Source      : [0] Emergency Department
+Destination : [5] Pharmacy
+Shortest Route : Emergency Department -> Radiology (X-Ray/CT) -> Pathology Lab -> Pharmacy
+Total Distance : 75 meters
+
+=============================================
+   HOSPITAL DEPARTMENT GRAPH NAVIGATION
+=============================================
+1. Display Hospital Graph (Departments & Corridors)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route using Dijkstra's Algorithm
+4. Exit
+Choice: Exiting...

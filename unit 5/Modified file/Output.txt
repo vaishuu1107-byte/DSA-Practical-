@@ -1,0 +1,217 @@
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: 
+--- Hospital Department Corridor Network (7 Departments) ---
+[0] Emergency Department   -> Radiology (X-Ray/CT) (30m), ICU (50m)
+[1] Radiology (X-Ray/CT)   -> Emergency Department (30m), ICU (15m), Pathology Lab (25m)
+[2] ICU                    -> Emergency Department (50m), Radiology (X-Ray/CT) (15m), Operation Theatre (20m)
+[3] Operation Theatre      -> ICU (20m), Pathology Lab (35m), Pharmacy (15m)
+[4] Pathology Lab          -> Radiology (X-Ray/CT) (25m), Operation Theatre (35m), Pharmacy (20m)
+[5] Pharmacy               -> Pathology Lab (20m), Operation Theatre (15m)
+[6] Isolation Ward         -> [DISCONNECTED - No Corridors Linked]
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: 
+--- BFS Traversal from [0] Emergency Department ---
+Reachable Units (6/7):
+  1. [0] Emergency Department
+  2. [1] Radiology (X-Ray/CT)
+  3. [2] ICU
+  4. [4] Pathology Lab
+  5. [3] Operation Theatre
+  6. [5] Pharmacy
+WARNING - Disconnected / Unreachable Units (1):
+  * [6] Isolation Ward (No corridor path from Emergency Department)
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: 
+Available Hospital Departments:
+  0 : Emergency Department
+  1 : Radiology (X-Ray/CT)
+  2 : ICU
+  3 : Operation Theatre
+  4 : Pathology Lab
+  5 : Pharmacy
+  6 : Isolation Ward
+Enter Destination Department ID (0 to 6): 
+--- Dijkstra's Shortest Route Result ---
+Source      : [0] Emergency Department
+Destination : [6] Isolation Ward
+Status      : PATH UNAVAILABLE! Department [6] Isolation Ward is disconnected from Emergency Department.
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: 
+Available Hospital Departments:
+  0 : Emergency Department
+  1 : Radiology (X-Ray/CT)
+  2 : ICU
+  3 : Operation Theatre
+  4 : Pathology Lab
+  5 : Pharmacy
+  6 : Isolation Ward
+Enter Destination Department ID (0 to 6): 
+--- Dijkstra's Shortest Route Result ---
+Source      : [0] Emergency Department
+Destination : [5] Pharmacy
+Shortest Route : Emergency Department -> Radiology (X-Ray/CT) -> Pathology Lab -> Pharmacy
+Total Distance : 75 meters
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: Enter New Department Name: Added Department [7] Blood Bank (Currently Disconnected).
+
+--- Hospital Department Corridor Network (8 Departments) ---
+[0] Emergency Department   -> Radiology (X-Ray/CT) (30m), ICU (50m)
+[1] Radiology (X-Ray/CT)   -> Emergency Department (30m), ICU (15m), Pathology Lab (25m)
+[2] ICU                    -> Emergency Department (50m), Radiology (X-Ray/CT) (15m), Operation Theatre (20m)
+[3] Operation Theatre      -> ICU (20m), Pathology Lab (35m), Pharmacy (15m)
+[4] Pathology Lab          -> Radiology (X-Ray/CT) (25m), Operation Theatre (35m), Pharmacy (20m)
+[5] Pharmacy               -> Pathology Lab (20m), Operation Theatre (15m)
+[6] Isolation Ward         -> [DISCONNECTED - No Corridors Linked]
+[7] Blood Bank             -> [DISCONNECTED - No Corridors Linked]
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: 
+Available Hospital Departments:
+  0 : Emergency Department
+  1 : Radiology (X-Ray/CT)
+  2 : ICU
+  3 : Operation Theatre
+  4 : Pathology Lab
+  5 : Pharmacy
+  6 : Isolation Ward
+  7 : Blood Bank
+Enter Source Department ID: Enter Destination Department ID: Enter Corridor Distance (meters): Enter Department ID to Compare Before/After Shortest Route: Corridor added successfully.
+
+--- Hospital Department Corridor Network (8 Departments) ---
+[0] Emergency Department   -> Radiology (X-Ray/CT) (30m), ICU (50m)
+[1] Radiology (X-Ray/CT)   -> Emergency Department (30m), ICU (15m), Pathology Lab (25m)
+[2] ICU                    -> Emergency Department (50m), Radiology (X-Ray/CT) (15m), Operation Theatre (20m), Pharmacy (20m)
+[3] Operation Theatre      -> ICU (20m), Pathology Lab (35m), Pharmacy (15m)
+[4] Pathology Lab          -> Radiology (X-Ray/CT) (25m), Operation Theatre (35m), Pharmacy (20m)
+[5] Pharmacy               -> Pathology Lab (20m), Operation Theatre (15m), ICU (20m)
+[6] Isolation Ward         -> [DISCONNECTED - No Corridors Linked]
+[7] Blood Bank             -> [DISCONNECTED - No Corridors Linked]
+
+===============================================================
+   COMPARISON: BEFORE UPDATE vs. AFTER GRAPH UPDATE
+===============================================================
+1. BFS Traversal Reachability from Emergency Department:
+   - Before Update (6 reachable, 2 disconnected): Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Pathology Lab -> Operation Theatre -> Pharmacy
+   - After Update  (6 reachable, 2 disconnected): Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Pathology Lab -> Operation Theatre -> Pharmacy
+
+2. Dijkstra's Shortest Path to [5] Pharmacy:
+   - Before Update:
+     Route    : Emergency Department -> Radiology (X-Ray/CT) -> Pathology Lab -> Pharmacy
+     Distance : 75 meters
+   - After Update:
+     Route    : Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Pharmacy
+     Distance : 65 meters
+   - Impact   : Shortest path improved by 10 meters.
+===============================================================
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: 
+Available Hospital Departments:
+  0 : Emergency Department
+  1 : Radiology (X-Ray/CT)
+  2 : ICU
+  3 : Operation Theatre
+  4 : Pathology Lab
+  5 : Pharmacy
+  6 : Isolation Ward
+  7 : Blood Bank
+Enter Source Department ID: Enter Destination Department ID: Enter Corridor Distance (meters): Enter Department ID to Compare Before/After Shortest Route: Corridor added successfully.
+
+--- Hospital Department Corridor Network (8 Departments) ---
+[0] Emergency Department   -> Radiology (X-Ray/CT) (30m), ICU (50m)
+[1] Radiology (X-Ray/CT)   -> Emergency Department (30m), ICU (15m), Pathology Lab (25m)
+[2] ICU                    -> Emergency Department (50m), Radiology (X-Ray/CT) (15m), Operation Theatre (20m), Pharmacy (20m)
+[3] Operation Theatre      -> ICU (20m), Pathology Lab (35m), Pharmacy (15m)
+[4] Pathology Lab          -> Radiology (X-Ray/CT) (25m), Operation Theatre (35m), Pharmacy (20m)
+[5] Pharmacy               -> Pathology Lab (20m), Operation Theatre (15m), ICU (20m), Isolation Ward (25m)
+[6] Isolation Ward         -> Pharmacy (25m)
+[7] Blood Bank             -> [DISCONNECTED - No Corridors Linked]
+
+===============================================================
+   COMPARISON: BEFORE UPDATE vs. AFTER GRAPH UPDATE
+===============================================================
+1. BFS Traversal Reachability from Emergency Department:
+   - Before Update (6 reachable, 2 disconnected): Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Pathology Lab -> Operation Theatre -> Pharmacy
+   - After Update  (7 reachable, 1 disconnected): Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Pathology Lab -> Operation Theatre -> Pharmacy -> Isolation Ward
+
+2. Dijkstra's Shortest Path to [6] Isolation Ward:
+   - Before Update:
+     Route    : UNAVAILABLE (Disconnected Vertex / No Corridor Path)
+     Distance : INF (Unreachable)
+   - After Update:
+     Route    : Emergency Department -> Radiology (X-Ray/CT) -> ICU -> Pharmacy -> Isolation Ward
+     Distance : 90 meters
+   - Impact   : Previously disconnected department is now REACHABLE (90 meters).
+===============================================================
+
+============================================================
+   MODIFIED HOSPITAL GRAPH SYSTEM (DYNAMIC & COMPARATIVE)
+============================================================
+1. Display Hospital Graph (Including Disconnected Units)
+2. Apply BFS from Emergency Department
+3. Find Shortest Route (Dijkstra's Algorithm)
+4. Add New Department (Vertex) [Modification A]
+5. Add / Update Corridor (Weighted Edge) & Compare [Mod A & B]
+6. Exit
+Choice: Exiting...
